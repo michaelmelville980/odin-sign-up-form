@@ -1,0 +1,59 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting Up Two Panels That Fill Viewport Height */
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Making Left Panel 40% width */
+.left-section {
+    flex: 0 0 40%;
+    height: 100%;
+    position: relative;
+}
+
+/* Making background image fill whole parent container */
+.left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Removing div from flow and formatting */
+.left-section div {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/* Shrinking image/specifiying its width */
+.left-section div img {
+    object-fit: contain;
+    flex: 0 0 125px;
+    align
+}
+
+.left-section div h1 {
+    flex: 0 0 auto;
+    color: white;
+}
+
+.right-section {
+    flex: 0 0 60%;
+    height: 100%;
+}
